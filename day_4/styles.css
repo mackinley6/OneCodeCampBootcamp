@@ -1,0 +1,5 @@
+/* Add a style for completed to-do items */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}

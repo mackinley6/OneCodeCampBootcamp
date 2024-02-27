@@ -1,48 +1,48 @@
 // Document Object Model
                     //Document node
-//head nide                            //hbody node
+//head node                            //body node
                          //element node            /comment node
-            //attribute node        //text node
+            //attribute node         //text node
 
 
-//Get element by ID
+// Get element by ID
 
-// var headingElement = document.getElementById("heading");
-// console.log(headingElement);
+var headingElement = document.getElementById("heading");
+console.log(headingElement);
 
-// //Get elements by classname
+//Get elements by classname
 
-// var textElements = document.getElementsByClassName("text")[0];
-// console.log(textElements);
+var textElements = document.getElementsByClassName("text")[0];
+console.log(textElements);
 
-// //Get element by tag name
+//Get element by tag name
 
-// var listItems = document.getElementsByTagName("li");
-// console.log(listItems);
+var listItems = document.getElementsByTagName("li");
+console.log(listItems);
 
-// //gGet element by Query Selector
+//gGet element by Query Selector
 
-// let container = document.querySelector('#container');
-// console.log(container);
+let container = document.querySelector('#container');
+console.log(container);
 
-// //get element by parent node
+//get element by parent node
 
-// var listParent = document.getElementById("list").parentNode;
-// console.log(listParent);
+var listParent = document.getElementById("list").parentNode;
+console.log(listParent);
 
-// //Get elemnt by children node
+//Get elemnt by children node
 
-// var containerChildren = document.getElementById('container').children;
-// console.log(containerChildren);
+var containerChildren = document.getElementById('container').children;
+console.log(containerChildren);
 
-// //modifying inner HTML
-// headingElement.innerHTML = "Updated Content";
-// console.log(headingElement.innerHTML)
+//modifying inner HTML
+headingElement.innerHTML = "Updated Content";
+console.log(headingElement.innerHTML)
 
-// //modifying text content
+//modifying text content
 
-// textElements.textContent = "I am a new paragraph";
-// console.log(textElements);
+textElements.textContent = "I am a new paragraph";
+console.log(textElements);
 
 const button = document.getElementById("btn");
 button.addEventListener("click", handleClick);
@@ -50,3 +50,5 @@ button.addEventListener("click", handleClick);
 function handleClick(event) {
     console.log("Button Clicked!");
 }
+
+var myNode = document.createTextNode('Hello, world!');
